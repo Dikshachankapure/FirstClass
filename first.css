@@ -1,0 +1,36 @@
+h1{
+	color: black;
+	text-align: center;
+	font-size:12px;
+	font-style:normal;
+}
+.header{
+	background-color: #d5e8ec;
+	padding:15px;
+	text-align: left;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  background-color=#f1f6f75c;
+                     	
+}.column.side {
+  width: 45%;
+  background-color=#f1f6f75c;
+}.column.middle {
+  width: 45%;
+  background-color=#f1f6f75c;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding:40px;
+  background-color=#f1f6f75c;
+}
+/*.footer {
+  background-color: #f1f1f1;
+  padding: 15px;
+  text-align: left;*/

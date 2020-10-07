@@ -1,0 +1,32 @@
+.header {
+  padding: 5px;
+  text-align: left;
+  background:#dbf1f5;
+  color: white;
+}
+.header h1 {
+  font-size: 15px;
+}
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 50%;
+  background-color:#f1f4f5;
+  padding: 200px;
+}
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 50%;
+  background-color:#f1f4f5;
+  padding: 200px;
+}
+.footer {
+  padding: 17px;
+  text-align: center;
+  background:#dbf1f5;
+}

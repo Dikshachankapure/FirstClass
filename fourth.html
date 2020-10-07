@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+h1{
+	color: black;
+	text-align: center;
+	font-size:12px;
+	font-style:normal;
+}
+.header {
+  padding: 20px;
+  text-align: left;
+  background:#dbf1f5;
+  color: black;
+  font-size:15px;
+}
+
+input[type=text], select, textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color:black;
+  color:white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color:black;
+}
+
+.container {
+  border-radius: 5px;
+  background-color:#f0f2f7;
+  padding: 10px;
+}
+
+.col-25 {
+  float:left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float:right;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.footer {
+  padding: 20px;
+  text-align:left;
+  background:#dbf1f5;
+}
+
+</style>
+</head>
+<body>
+	<h1>Employee Registration</h1>
+<div class="header">
+  <h>Please Enter Employee Details</h>
+
+
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Employee Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="Employee Name" placeholder="Enter Your Name">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Department:</label>
+      </div>
+      <div class="col-75">
+      	<select id="Department" name="Department">
+        	<option value="-1">select Your Department</option>
+  						<option value="computer science">computer science</option>
+  						<option value="electronics">electronics</option>
+  						<option value="electrical">electrical</option>
+  						<option value="mechanical">mechanical</option>
+  					</select>
+      </div>
+    </div>
+    <div class="row">
+    	<div class="col-25">
+    		<label for="role">Role:</label>
+    		</div>
+    		<div class="col-75">
+    		<select id="role" name="role">
+  						<option value="-1">select</option>
+  						<option value="teacher">teacher</option>
+  						<option value="principal">principal</option>
+  						<option value="hod">hod</option>
+  					</select>
+    		
+    	</div>
+    	
+    </div>
+    <div class="row">
+       <div class="col-25">
+       	<lable for="Email">Email</lable>
+       </div>
+       <div class="col-75">
+       	<input type="text" id="email" name="Email" placeholder="Enter Your Email">
+       </div>
+    </div>
+    <div class="row">
+    	<div class="col-25">
+    		<lable for="pan no">Pan_no:</lable>
+    	</div>
+    	<div class="col-75">
+    	<input type="text" id="pan no" name="pan no" placeholder="Enter Your Pan no">
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Zip_code">Zip_code</label>
+      </div>
+           <div class="col-75">
+                 <input type="text" name="zip code" placeholder="Enter Your Zip Code" >
+           </div>
+    </div>
+ 
+    <div class="row">
+           <div class="footer">
+	
+            </div>
+   
+    <div class="row">
+      <input type="submit" value="Register">
+    </div>
+    </div>
+ 
+  </form>
+  </div>
+  </div>
+</body>
+</html>
